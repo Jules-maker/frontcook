@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -8,7 +9,9 @@ const Header = () => {
                     <div className="logo">LOGO</div>
                     <nav>
                         <ul>
-                            <li><a href="">Home</a></li>
+                            <li> <Link to="/">Home</Link></li>
+                            {/* <li><a href="/molki">Molki</a></li> */}
+                            <li><Link to="/molki">Molki</Link></li> 
                         </ul>
                     </nav>
                 </div>

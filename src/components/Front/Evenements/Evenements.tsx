@@ -11,7 +11,7 @@ const Evenements = () => {
         // setCount(count + 1);
         // setCount(count + 1);
         // setCount(count + 1);
-        //fonctionne 3x car on utilise le prev qui est le dernier état de la variable count  u showcount, on voit le numero, on crée un btn qui met en faux ou vrai et fait disparaitre le count si on click sur le btn showcount on refait apparaitre le count
+        //fonctionne 3x car on utilise le prev qui est le dernier état de la variable count  u showcount, on voit le numero, on crée un btn qui met en faux ou vrai et fait disparaitre le count si on click sur le btn showcount on refait apparaitre le count exo2 : deux equipes pour un molky (pq pas formulaire pr les noms), mettre le score des deux via un tableau de scores 
         setCount(prev => prev + 1);
         // setCount(prev => prev + 1);
         // setCount(prev => prev + 1);
@@ -53,6 +53,7 @@ const Evenements = () => {
                         <button onClick={handleClick}>Cliquer pour incrémenter</button>
                         <button onClick={toggleShowCount}> {showCount ? '🙈' : '🙉'}</button>
                         <p hidden={showCount}>{ count }</p>
+                        {/* { !showCount && <p>{ count }dzadza</p> } */}
                     </li>
                 </ul>
 
